@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <!-- Google Fonts: Outfit for clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for standard icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Todo App</h2>
+
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Add your new todo" autofocus>
+        <button id="addBtn" onclick="addTask()"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="footer">
+        <span id="pendingText">You have 0 pending tasks</span>
+        <button id="clearAllBtn" onclick="clearAllTasks()">Clear All</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
